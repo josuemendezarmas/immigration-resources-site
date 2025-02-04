@@ -1,4 +1,8 @@
 function toggleInfo() {
-    let info = document.getElementById("info");
-    info.style.display = info.style.display === "none" ? "block" : "none";
+    let infoDiv = document.getElementById("info");
+    if (infoDiv.classList.contains("hidden")) {
+        infoDiv.classList.remove("hidden");
+    } else {
+        infoDiv.classList.add("hidden");
+    }
 }
