@@ -3,49 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recursos de Inmigración</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Si Se Pudo - Recursos de Inmigración</title>
+    <meta name="description" content="Si Se Pudo: recursos, derechos y apoyo para la comunidad inmigrante. Información legal, contactos de emergencia y más.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>📌 Recursos de Inmigración</h1>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="/" class="nav-brand">Si Se Pudo</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#derechos">Tus Derechos</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#preparacion">Preparación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#emergencia" class="nav-cta">Emergencia</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Conoce tus derechos.<br>Protege a tu familia.</h1>
+                <p class="hero-subtitle">Información confiable, recursos legales y apoyo para la comunidad inmigrante.</p>
+                <div class="hero-actions">
+                    <a href="#derechos" class="btn btn-primary">Conoce tus Derechos</a>
+                    <a href="#emergencia" class="btn btn-danger">Línea de Emergencia</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section class="intro">
-            <p>Este sitio proporciona información útil para personas en riesgo de deportación o acoso.</p>
-            <button onclick="toggleInfo()">📢 Ver Contactos de Emergencia</button>
-            <div id="info" class="hidden">
-                <p>📞 <strong>Línea de ayuda:</strong> <a href="tel:7148811558">714-881-1558</a></p>
-                <p>📍 <strong>Abogados de inmigración:</strong> <a href="https://www.immigrationadvocates.org/legaldirectory/" target="_blank">Buscar ayuda legal</a></p>
+    <!-- Emergency Banner -->
+    <section class="emergency-banner" id="emergencia">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-icon">&#9742;</div>
+                <div>
+                    <h2>Línea de Ayuda de Emergencia</h2>
+                    <p>Si tú o alguien que conoces está siendo detenido, llama ahora:</p>
+                </div>
+                <a href="tel:7148811558" class="emergency-phone">(714) 881-1558</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="resources">
-            <h2>🔗 Recursos Importantes</h2>
-            <ul>
-                <li>📝 <a href="https://www.ilrc.org/resources/family-preparedness-plan" target="_blank">Plan de Preparación Familiar</a></li>
-                <li>📑 <a href="https://www.uscis.gov/tools/find-legal-services" target="_blank">Encuentra Servicios Legales</a></li>
-                <li>🔎 <a href="https://www.aclu.org/issues/immigrants-rights" target="_blank">Derechos de los Inmigrantes - ACLU</a></li>
-            </ul>
-        </section>
+    <!-- Know Your Rights -->
+    <section class="section" id="derechos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Conoce tus Derechos</h2>
+                <p>La Constitución protege a todas las personas en Estados Unidos, sin importar su estatus migratorio.</p>
+            </div>
+            <div class="rights-grid">
+                <div class="card">
+                    <div class="card-icon">&#128274;</div>
+                    <h3>Derecho a Guardar Silencio</h3>
+                    <p>Tienes derecho a no responder preguntas sobre tu estatus migratorio, dónde naciste, o cómo entraste al país.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#128196;</div>
+                    <h3>No Firmes Nada</h3>
+                    <p>No firmes ningún documento sin antes hablar con un abogado. Firmar puede significar renunciar a tus derechos.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#127968;</div>
+                    <h3>Tu Hogar es Privado</h3>
+                    <p>No tienes que abrir la puerta. ICE necesita una orden judicial firmada por un juez para entrar a tu casa.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#9878;</div>
+                    <h3>Derecho a un Abogado</h3>
+                    <p>Tienes derecho a hablar con un abogado. Di: "Quiero hablar con mi abogado" y no digas nada más.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#128247;</div>
+                    <h3>Documenta Todo</h3>
+                    <p>Si es seguro hacerlo, graba o anota los detalles del encuentro: nombres, números de placa, hora y lugar.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#128106;</div>
+                    <h3>Protege a tu Familia</h3>
+                    <p>Ten un plan familiar listo. Designa a alguien de confianza para cuidar a tus hijos en caso de emergencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="rights">
-            <h2>⚖️ Conoce tus Derechos</h2>
-            <p>Si eres detenido por ICE:</p>
-            <ul>
-                <li>🚫 Tienes derecho a **permanecer en silencio**.</li>
-                <li>📃 No firmes ningún documento sin hablar con un abogado.</li>
-                <li>🏠 No abras la puerta si no tienen una orden judicial.</li>
-            </ul>
-        </section>
-    </main>
+    <!-- Resources -->
+    <section class="section section-alt" id="recursos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recursos Importantes</h2>
+                <p>Organizaciones y herramientas que pueden ayudarte a ti y a tu familia.</p>
+            </div>
+            <div class="resources-grid">
+                <a href="https://www.ilrc.org/resources/family-preparedness-plan" target="_blank" rel="noopener" class="resource-card">
+                    <div class="resource-icon">&#128221;</div>
+                    <h3>Plan de Preparación Familiar</h3>
+                    <p>Guía del ILRC para preparar a tu familia ante una emergencia migratoria.</p>
+                    <span class="resource-link">Visitar &rarr;</span>
+                </a>
+                <a href="https://www.uscis.gov/tools/find-legal-services" target="_blank" rel="noopener" class="resource-card">
+                    <div class="resource-icon">&#128269;</div>
+                    <h3>Servicios Legales - USCIS</h3>
+                    <p>Encuentra servicios legales gratuitos o de bajo costo cerca de ti.</p>
+                    <span class="resource-link">Buscar &rarr;</span>
+                </a>
+                <a href="https://www.aclu.org/issues/immigrants-rights" target="_blank" rel="noopener" class="resource-card">
+                    <div class="resource-icon">&#9878;</div>
+                    <h3>ACLU - Derechos del Inmigrante</h3>
+                    <p>Información sobre tus derechos constitucionales de la ACLU.</p>
+                    <span class="resource-link">Leer más &rarr;</span>
+                </a>
+                <a href="https://www.immigrationadvocates.org/legaldirectory/" target="_blank" rel="noopener" class="resource-card">
+                    <div class="resource-icon">&#128188;</div>
+                    <h3>Directorio de Abogados</h3>
+                    <p>Busca abogados de inmigración acreditados en tu área.</p>
+                    <span class="resource-link">Buscar &rarr;</span>
+                </a>
+                <a href="https://www.ice.gov/detain/detention-facilities" target="_blank" rel="noopener" class="resource-card">
+                    <div class="resource-icon">&#128205;</div>
+                    <h3>Localizador de Detenidos</h3>
+                    <p>Herramienta para localizar a una persona detenida por ICE.</p>
+                    <span class="resource-link">Buscar &rarr;</span>
+                </a>
+                <a href="https://www.notariacercademi.com" target="_blank" rel="noopener" class="resource-card">
+                    <div class="resource-icon">&#9888;</div>
+                    <h3>Cuidado con el Fraude</h3>
+                    <p>Aprende a identificar fraudes migratorios y "notarios" falsos.</p>
+                    <span class="resource-link">Informarte &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Recursos de Inmigración | Información confiable para proteger tus derechos.</p>
+    <!-- Preparation Section -->
+    <section class="section" id="preparacion">
+        <div class="container">
+            <div class="section-header">
+                <h2>Plan de Preparación</h2>
+                <p>Estar preparado puede marcar la diferencia. Sigue estos pasos para proteger a tu familia.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Memoriza números importantes</h3>
+                        <p>Memoriza el número de tu abogado y de un contacto de emergencia familiar. No dependas solo del teléfono.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Prepara documentos importantes</h3>
+                        <p>Ten copias de actas de nacimiento, pasaportes, y documentos médicos en un lugar seguro y accesible.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Designa un tutor para tus hijos</h3>
+                        <p>Asigna legalmente a una persona de confianza que pueda cuidar a tus hijos si eres detenido.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Crea un fondo de emergencia</h3>
+                        <p>Ahorra lo que puedas para cubrir costos legales o necesidades familiares en caso de emergencia.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Conoce a tu comunidad</h3>
+                        <p>Conecta con organizaciones locales, iglesias y grupos de apoyo que puedan ayudarte.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / About -->
+    <section class="section section-alt" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Si Se Pudo</h2>
+                <p>Somos una plataforma comunitaria dedicada a empoderar a la comunidad inmigrante con información, recursos y apoyo.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Nuestra Misión</h3>
+                    <p>Creemos que la información es poder. Nuestra misión es asegurar que cada persona conozca sus derechos y tenga acceso a los recursos que necesita para proteger a su familia.</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Contáctanos</h3>
+                    <p>¿Tienes preguntas o quieres colaborar con nosotros?</p>
+                    <p><strong>Sitio web:</strong> <a href="https://sisepudo.org" target="_blank">sisepudo.org</a></p>
+                    <p><strong>Emergencias:</strong> <a href="tel:7148811558">(714) 881-1558</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Si Se Pudo</h3>
+                    <p>Información confiable para proteger tus derechos.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#derechos">Tus Derechos</a></li>
+                        <li><a href="#recursos">Recursos</a></li>
+                        <li><a href="#preparacion">Preparación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Recursos Externos</h4>
+                    <ul>
+                        <li><a href="https://www.aclu.org/issues/immigrants-rights" target="_blank" rel="noopener">ACLU</a></li>
+                        <li><a href="https://www.uscis.gov" target="_blank" rel="noopener">USCIS</a></li>
+                        <li><a href="https://www.ilrc.org" target="_blank" rel="noopener">ILRC</a></li>
+                        <li><a href="https://www.immigrationadvocates.org" target="_blank" rel="noopener">Immigration Advocates</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Si Se Pudo | sisepudo.org — Todos los derechos reservados.</p>
+                <p class="disclaimer">Este sitio proporciona información general y no constituye asesoría legal. Consulta con un abogado para tu caso específico.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
