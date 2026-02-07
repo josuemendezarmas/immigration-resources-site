@@ -527,6 +527,293 @@ img {
     opacity: 0.5 !important;
 }
 
+/* --- Emergency Page --- */
+.emergency-hero {
+    padding: 140px 0 60px;
+    background: linear-gradient(135deg, #b71c1c 0%, var(--color-accent) 100%);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.emergency-hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.emergency-label {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.2);
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.emergency-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+}
+
+.emergency-hero-subtitle {
+    font-size: 1.15rem;
+    opacity: 0.9;
+    margin-bottom: 36px;
+}
+
+.emergency-call-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--color-white);
+    color: var(--color-accent);
+    padding: 18px 36px;
+    border-radius: var(--radius);
+    font-weight: 700;
+    transition: all var(--transition);
+    box-shadow: var(--shadow-lg);
+}
+
+.emergency-call-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 14px 40px rgba(0,0,0,0.2);
+    color: var(--color-accent);
+}
+
+.call-icon {
+    font-size: 2rem;
+}
+
+.call-label {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+.call-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+/* Action Cards */
+.action-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.action-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 32px;
+    transition: all var(--transition);
+}
+
+.action-card:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: transparent;
+}
+
+.action-card-urgent {
+    border-left: 4px solid var(--color-accent);
+}
+
+.action-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.action-number {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: var(--color-accent);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.action-card-header h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.action-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 56px;
+}
+
+.action-list li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 0.95rem;
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.action-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background: var(--color-accent);
+    border-radius: 50%;
+}
+
+.action-list li strong {
+    color: var(--color-primary);
+}
+
+.action-list li em {
+    background: var(--color-bg-alt);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+/* Phrase Cards */
+.phrases-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.phrase-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 24px;
+    transition: all var(--transition);
+}
+
+.phrase-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary-light);
+}
+
+.phrase-es {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 6px;
+}
+
+.phrase-en {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    font-style: italic;
+}
+
+/* Emergency Contacts Grid */
+.contacts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-emergency-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 28px;
+    text-align: center;
+    transition: all var(--transition);
+}
+
+.contact-emergency-card:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: transparent;
+}
+
+.contact-emergency-icon {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.contact-emergency-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.contact-emergency-number {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--color-accent);
+    margin-bottom: 8px;
+    transition: color var(--transition);
+}
+
+.contact-emergency-number:hover {
+    color: var(--color-accent-hover);
+}
+
+.contact-emergency-link {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-primary-light);
+    margin-bottom: 8px;
+}
+
+.contact-emergency-card p {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+}
+
+/* Reminder Banner */
+.reminder-banner {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.reminder-banner h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.reminder-banner p {
+    max-width: 600px;
+    margin: 0 auto 28px;
+    opacity: 0.9;
+    font-size: 1.05rem;
+}
+
 /* ===========================
    Responsive Breakpoints
    =========================== */
@@ -552,6 +839,18 @@ img {
     .hero h1 {
         font-size: 3rem;
     }
+
+    .phrases-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .emergency-hero h1 {
+        font-size: 3rem;
+    }
 }
 
 /* Desktop */
@@ -574,6 +873,22 @@ img {
 
     .section {
         padding: 100px 0;
+    }
+
+    .phrases-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contacts-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .emergency-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .emergency-hero {
+        padding: 160px 0 80px;
     }
 }
 
@@ -620,5 +935,17 @@ img {
 
     .hero {
         padding: 120px 0 60px;
+    }
+
+    .emergency-hero h1 {
+        font-size: 2rem;
+    }
+
+    .emergency-hero {
+        padding: 120px 0 40px;
+    }
+
+    .action-list {
+        padding-left: 0;
     }
 }
